@@ -919,6 +919,8 @@ a.logo {
 .payment-item,
 .contact-item {
     height: fit-content;
+    display: flex;
+    align-items: center;
 
     svg {
         width: 20px;
