@@ -727,6 +727,10 @@ a.logo {
     @include adaptive-font-size(16, 18, 1200);
     line-height: 120%;
 
+    &:first-child {
+        padding-top: 12px;
+    }
+
     &:hover {
         color: var(--accent);
     }
