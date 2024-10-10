@@ -449,9 +449,10 @@ a {
 .menu-wrap {
     width: fit-content;
 
-    .menu-item:not(:last-child) {
-        margin-right: 60px;
-    }
+}
+
+.menu-item:not(:last-child) {
+    margin-right: 60px;
 }
 
 .menu-item__link {
@@ -1151,7 +1152,7 @@ a {
         min-width: 100% !important;
     }
 
-    a.logo {
+    .logo {
         width: 180px;
     }
 
