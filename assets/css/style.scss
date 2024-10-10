@@ -442,7 +442,7 @@ a {
     background-color: #10101DE5;
 }
 
-a.logo {
+.logo {
     width: 247px;
 }
 
@@ -452,16 +452,16 @@ a.logo {
     .menu-item:not(:last-child) {
         margin-right: 60px;
     }
+}
 
-    .menu-item a {
-        padding: 10px 0;
-        font-size: 13px;
-        font-weight: 600;
-        line-height: 15.6px;
-        color: $base-color;
-        transition: all 0.2s ease;
-        @include link;
-    }
+.menu-item__link {
+    padding: 10px 0;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 15.6px;
+    color: $base-color;
+    transition: all 0.2s ease;
+    @include link;
 }
 
 /* burger*/
@@ -593,6 +593,7 @@ a.logo {
     @include circle(100px);
     @include allcenter();
     margin: 0 auto;
+    border: 5px solid #286690;
 
     svg {
         width: 50px;
@@ -611,8 +612,8 @@ a.logo {
 }
 
 .form__inner {
-    display: grid;
     @include grid-auto(350px, 30px);
+    grid-auto-flow: row dense;
 }
 
 /*select*/
